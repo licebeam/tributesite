@@ -10,6 +10,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+        
+
 
     <link rel="stylesheet" href="style.css"></link>
 
@@ -17,8 +19,12 @@
 
 <body>
     <div class="wrapper container-fluid">
+            
         <div class="imageCrop">
+                <div class="spacer">
 
+                        test
+                    </div>
             <div id="logo1">
                 <img class="somLogo img-fluid" src="images/logo.png" alt="">
             </div>
@@ -35,8 +41,12 @@
 
     </div>
 
-
-
+ 
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+        window.sr = ScrollReveal({reset: true});
+    sr.reveal('.somLogo',{duration: 200});
+        </script>
 </body>
 
 
