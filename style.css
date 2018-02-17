@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+
+}
+
+.wrapper{
+    
+    width: 1400px;
+    margin: 0 auto;
+}
+.imageCrop{
+    height: 2924;
+    background-image: url(images/bg1.jpg);
+    width: 100%;
+    background-position-x: -100px;
+   
+}
+#logo1{
+   padding-top:100px;
+    width: 100%;
+    margin: auto;
+}
+.somLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foot{
+    background-color: white;
+}
+.snesLogo {
+    display: inline;
+    padding: 10px;
+    width: 20%;
+    float: right;
+    
+   
+}
+
+.squareLogo {
+    display: inline;
+    padding: 10px;
+    width: 20%;
+}
