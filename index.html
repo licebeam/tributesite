@@ -9,8 +9,8 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="/modules/parallax.min.js"></script>
 
-        
 
 
     <link rel="stylesheet" href="style.css"></link>
@@ -19,34 +19,95 @@
 
 <body>
     <div class="wrapper container-fluid">
-            
-        <div class="imageCrop">
-                <div class="spacer">
 
-                        test
-                    </div>
-            <div id="logo1">
-                <img class="somLogo img-fluid" src="images/logo.png" alt="">
+        <div class="imageCrop parallax-window" data-parallax="scroll" data-image-src="images/bg1.jpg" data-speed="0.3">
+            <div class="spacer ">
             </div>
+            <div class="grid-container">
+                <!-- Grid for content -->
+                <div class="boxart " style="display: inline-block">
 
+                    <div id="img1">
+                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                    </div>
+                    <div id="txt1">
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+
+
+                </div>
+                <div class="boxart2 " style="display: inline-block">
+                    <div id="img2">
+                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                    </div>
+                    <div id="txt2">
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div class="boxart3 " style="display: inline-block">
+                    <div id="img3">
+                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                    </div>
+                    <div id="txt3">
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div class="boxart4 " style="display: inline-block">
+                    <div id="img4">
+                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                    </div>
+                    <div id="txt4">
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </div>
+                <div id="logo1 boxart5" style="display: inline-block">
+                    <img class="somLogo img-fluid " src="images/logo.png " alt=" ">
+                </div>
+
+            </div>
+            <!-- Grid for content -->
 
         </div>
+
+
+
+
+
         <div class="foot">
 
-            <img class="snesLogo img-fluid" src="images/sneslogo.png" alt="">
-            <img class="squareLogo" src="images/squarelogo.png" alt="">
+            <img class="snesLogo img-fluid " src="images/sneslogo.png " alt=" ">
+            <img class="squareLogo " src="images/squarelogo.png " alt=" ">
 
         </div>
 
-
     </div>
+    <!--This is the end of the container -->
 
- 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script>
-        window.sr = ScrollReveal({reset: true});
-    sr.reveal('.somLogo',{duration: 200});
-        </script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js "></script>
+    <script>
+        window.sr = ScrollReveal({
+            reset: true
+        });
+        sr.reveal('.somLogo', {
+            duration: 400
+        });
+        sr.reveal('.boxart', {
+            duration: 400
+        });
+        sr.reveal('.boxart2', {
+            duration: 400
+        });
+        sr.reveal('.boxart3', {
+            duration: 400
+        });
+        sr.reveal('.boxart4', {
+            duration: 400
+        });
+        sr.reveal('.boxart5', {
+            duration: 400
+        });
+    </script>
 </body>
 
 

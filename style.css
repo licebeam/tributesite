@@ -1,57 +1,94 @@
-html{
+html {
     height: 100%;
 }
-body{
-    margin:0;
+
+body {
+    margin: 0;
     background-color: black;
     height: 100%;
-
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
-    
     margin: 0 auto;
 }
 
-.imageCrop{
-    height: 2924;
+.imageCrop {
+    height: 3000;
+    /*height: 2924;*/
     background-image: url(images/bg1.jpg);
-
     background-position-x: -100px;
-   
 }
 
-.spacer{
-    height: 1000px;
+.spacer {
+    height: 800px;
     width: 100%;
     margin: 0 auto;
-    
 }
-#logo1{
+
+#logo1 {
     margin: auto;
 }
-.somLogo{
+
+.somLogo {
     display: block;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.foot{
+.foot {
     background-color: white;
+    z-index: 10;
 }
+
 .snesLogo {
-    
     padding: 10px;
     width: 20%;
     float: right;
-    
-   
 }
 
 .squareLogo {
-    
     padding: 10px;
     width: 20%;
+}
+
+.parallax-window {
+    min-height: 400px;
+    height: 5000px;
+    background: transparent;
+}
+
+/*Grid Setup*/
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 800px 800px 800px 1000px;
+    grid-template-areas: "boxart1" "boxart2" "boxart3" "boxart4" "boxart5";
+}
+
+.grid-container>div {
+    margin: 200 0 200 0;
+}
+
+#img1,
+#img3 {
+    float: left;
+}
+
+#txt1,
+#txt3 {
+    float: left;
+}
+
+#img2,
+#img4 {
+    float: right;
+}
+
+#txt2,
+#txt4 {
+    float: left;
 }
