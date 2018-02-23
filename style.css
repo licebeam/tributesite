@@ -1,10 +1,11 @@
 html {
     height: 100%;
+    margin: 0 auto;
 }
 
 body {
-    margin: 0;
-    background-color: black;
+    margin: 0 auto;
+    background-color: white;
     height: 100%;
 }
 
@@ -17,29 +18,39 @@ body {
     height: 3000;
     /*height: 2924;*/
     background-image: url(images/bg1.jpg);
-    background-position-x: -100px;
+    background-position-x: 11px;
 }
 
 .spacer {
     height: 800px;
-    width: 100%;
     margin: 0 auto;
-}
-
-#logo1 {
-    margin: auto;
 }
 
 .somLogo {
     display: block;
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .foot {
-    background-color: white;
+    background-color: beige;
     z-index: 10;
+    color: red;
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+}
+
+nav {
+    float: left;
+    z-index: -1000;
+    font-size: 20px;
+    margin: 0 0 20 -60;
+}
+
+li {
+    color: white;
+    list-style: none;
 }
 
 .snesLogo {
@@ -54,23 +65,54 @@ body {
 }
 
 .parallax-window {
-    min-height: 400px;
+    min-height: 100px;
     height: 5000px;
+    width: 100%;
     background: transparent;
+}
+
+p,
+h1 {
+    background-color: white;
+    padding: 20;
+    font-family: 'Patua One', cursive;
+    font-size: 16pt;
+    color: black;
+    letter-spacing: 6px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.inImage {
+    height: auto;
+    width: 100%;
+    max-height: 400px;
+    min-width: 20%;
 }
 
 /*Grid Setup*/
 
 .grid-container {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 800px 800px 800px 1000px;
-    grid-template-areas: "boxart1" "boxart2" "boxart3" "boxart4" "boxart5";
+    grid-template-rows: 800px 800px 800px 800px 200px;
+    grid-template-areas: "boxart" "boxart2" "boxart3" "boxart4" "boxart5";
 }
 
-.grid-container>div {
-    margin: 200 0 200 0;
+.boxart,
+.boxart3 {
+    margin: 200 20 200 40;
+}
+
+.boxart4,
+.boxart2 {
+    margin: 200 40 200 20;
+}
+
+.boxart5 {
+    margin: 0 auto;
 }
 
 #img1,
@@ -90,5 +132,5 @@ body {
 
 #txt2,
 #txt4 {
-    float: left;
+    float: right;
 }

@@ -1,15 +1,20 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="/modules/parallax.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
 
 
 
@@ -18,49 +23,87 @@
 </head>
 
 <body>
-    <div class="wrapper container-fluid">
+
+
+
+
+    <div class="wrapper container-fluid" id="top">
+
+
 
         <div class="imageCrop parallax-window" data-parallax="scroll" data-image-src="images/bg1.jpg" data-speed="0.3">
+            <nav id="sticker" class="row">
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <i class="fas fa-arrow-circle-up"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#title">
+                            <i class="fas fa-arrow-circle-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <div class="spacer ">
+
+
+
+
             </div>
-            <div class="grid-container">
+            <div class="grid-container row">
                 <!-- Grid for content -->
-                <div class="boxart " style="display: inline-block">
+                <div class="boxart">
 
                     <div id="img1">
-                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                        <img class="inImage img-fluid" src="images/sombox.jpg " alt=" ">
                     </div>
                     <div id="txt1">
-                        <p>Lorem ipsum dolor sit</p>
+                        <h1>TEXT HERE</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, impedit molestias. Ea obcaecati
+                            dolores atque sunt, delectus perferendis voluptatum dolorum quisquam autem qui, incidunt voluptates
+                            ab esse expedita ex ipsum?</p>
                     </div>
 
 
                 </div>
-                <div class="boxart2 " style="display: inline-block">
+                <div class="boxart2 ">
                     <div id="img2">
-                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                        <img class="inImage img-fluid" src="images/backbox.jpg " alt=" ">
                     </div>
                     <div id="txt2">
-                        <p>Lorem ipsum dolor sit</p>
+                        <h1>TEXT HERE</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, impedit molestias. Ea obcaecati
+                            dolores atque sunt, delectus perferendis voluptatum dolorum quisquam autem qui, incidunt voluptates
+                            ab esse expedita ex ipsum?</p>
                     </div>
                 </div>
-                <div class="boxart3 " style="display: inline-block">
+                <div class="boxart3 ">
                     <div id="img3">
-                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                        <img class="inImage img-fluid " src="images/giffer.gif " alt=" ">
                     </div>
                     <div id="txt3">
-                        <p>Lorem ipsum dolor sit</p>
+                        <h1>TEXT HERE</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, impedit molestias. Ea obcaecati
+                            dolores atque sunt, delectus perferendis voluptatum dolorum quisquam autem qui, incidunt voluptates
+                            ab esse expedita ex ipsum?</p>
                     </div>
+                    <img class="inImage img-fluid " src="images/p3.png " alt=" ">
                 </div>
-                <div class="boxart4 " style="display: inline-block">
+                <div class="boxart4 ">
                     <div id="img4">
-                        <img class="img-fluid " style="vertical-align:middle" src="images/sombox.jpg " alt=" ">
+                        <img class="inImage img-fluid " src="images/sombox.jpg " alt=" ">
                     </div>
                     <div id="txt4">
-                        <p>Lorem ipsum dolor sit</p>
+                        <h1>TEXT HERE</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, impedit molestias. Ea obcaecati
+                            dolores atque sunt, delectus perferendis voluptatum dolorum quisquam autem qui, incidunt voluptates
+                            ab esse expedita ex ipsum?</p>
                     </div>
                 </div>
-                <div id="logo1 boxart5" style="display: inline-block">
+                <span id="title"></span>
+                <div id="logo1" class="boxart5">
                     <img class="somLogo img-fluid " src="images/logo.png " alt=" ">
                 </div>
 
@@ -73,13 +116,28 @@
 
 
 
+
         <div class="foot">
 
             <img class="snesLogo img-fluid " src="images/sneslogo.png " alt=" ">
-            <img class="squareLogo " src="images/squarelogo.png " alt=" ">
+            <h1>
+                <a href="https://twitter.com/dwalkerart" class="ani2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/licebeam" class="ani2">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dustin-walker-70b61b91/" class="ani2">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://codepen.io/licebeam/" class="ani2">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </h1>
+
+            <img class="squareLogo img-fluid" src="images/squarelogo.png " alt=" ">
 
         </div>
-
     </div>
     <!--This is the end of the container -->
 
@@ -109,6 +167,19 @@
         });
     </script>
 </body>
+<script>
+    $(document).ready(function () {
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
 
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+        });
+        $("#sticker").sticky({
+            topSpacing: 10
+        });
+    });
+</script>
 
 </html>
