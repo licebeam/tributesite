@@ -22,7 +22,7 @@ body {
 }
 
 .spacer {
-    height: 800px;
+    height: 100px;
     margin: 0 auto;
 }
 
@@ -34,18 +34,25 @@ body {
 }
 
 .foot {
-    background-color: beige;
     z-index: 10;
     color: red;
     font-family: 'Patua One', cursive;
     font-size: 16px;
+    width: 100%;
+    height: 40px;
+}
+
+.footText {
+    float: right;
+    padding: 12;
+    color: black;
 }
 
 nav {
     float: left;
     z-index: -1000;
-    font-size: 20px;
-    margin: 0 0 20 -60;
+    font-size: 30px;
+    margin: 0 0 20 -80px;
 }
 
 li {
@@ -53,15 +60,40 @@ li {
     list-style: none;
 }
 
+/* unvisited link */
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+
+a:active {
+    color: blue;
+}
+
 .snesLogo {
     padding: 10px;
-    width: 20%;
-    float: right;
+    float: left;
+    width: 150px;
 }
 
 .squareLogo {
     padding: 10px;
-    width: 20%;
+    float: left;
+    width: 150px;
 }
 
 .parallax-window {
@@ -84,31 +116,34 @@ h1 {
 
 h1 {
     font-size: 30px;
+    background-color: pink;
 }
 
 .inImage {
     height: auto;
     width: 100%;
-    max-height: 400px;
     min-width: 20%;
 }
+
+#logo1 {}
 
 /*Grid Setup*/
 
 .grid-container {
     display: grid;
-    grid-template-rows: 800px 800px 800px 800px 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1000px 1000px 1200px 900px 100px;
     grid-template-areas: "boxart" "boxart2" "boxart3" "boxart4" "boxart5";
 }
 
 .boxart,
 .boxart3 {
-    margin: 200 20 200 40;
+    margin: 0 20 0 40;
 }
 
 .boxart4,
 .boxart2 {
-    margin: 200 40 200 20;
+    margin: 0 40 0 20;
 }
 
 .boxart5 {
@@ -133,4 +168,39 @@ h1 {
 #txt2,
 #txt4 {
     float: right;
+}
+
+.ani2 {
+    margin: 0 auto;
+    padding: 15 10 10 10;
+    float: right;
+}
+
+iframe {
+    min-height: 400px;
+    width: 100%;
+}
+
+.p1img {
+    position: fixed;
+    margin-top: -400;
+    margin-left: 340;
+}
+
+.p2img {
+    position: fixed;
+    margin-top: -60;
+    margin-left: -80;
+}
+
+.p3img {
+    position: fixed;
+    margin-top: -600;
+    margin-left: 300;
+}
+
+.p4img {
+    position: fixed;
+    margin-top: -600;
+    margin-left: 300;
 }
